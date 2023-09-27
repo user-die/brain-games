@@ -1,0 +1,25 @@
+{
+  "name": "userdie-brain-games",
+  "version": "1.0.0",
+  "description": "<a href=\"https://codeclimate.com/github/user-die/brain-games/maintainability\"><img src=\"https://api.codeclimate.com/v1/badges/312fbcd4291718adfab8/maintainability\" /></a>",
+  "main": "index.js",
+  "bin": {
+    "userdie-brain-games": "bin/brain-calc.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/user-die/brain-games.git"
+  },
+  "author": "@userdie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/user-die/brain-games/issues"
+  },
+  "homepage": "https://github.com/user-die/brain-games#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
