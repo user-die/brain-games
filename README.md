@@ -1,9 +1,10 @@
 <a href="https://codeclimate.com/github/user-die/brain-games/maintainability"><img src="https://api.codeclimate.com/v1/badges/312fbcd4291718adfab8/maintainability" /></a>
 
 ### Install project / Установка пакета
+https://imgur.com/a/V8qKxJh
 
 ```bash
-make install userdie-brain-games
+npm install userdie-brain-games
 ```
 ### Run project 
 
@@ -20,7 +21,6 @@ brain-calc
 ```bash
 brain-even
 ```
-https://imgur.com/a/1WYH27N
 
 #### Gcd game / Игра "Наибольший общий делитель"
 ```bash
