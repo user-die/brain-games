@@ -3,7 +3,7 @@
 ### Install project / Установка пакета
 
 ```bash
-make install userdie-brain-games
+npm install userdie-brain-games
 ```
 ### Run project 
 
