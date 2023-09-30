@@ -1,6 +1,5 @@
-
 import readlineSync from 'readline-sync';
-import { chechAnswer } from '../generalFunctions.js';
+import { chechAnswer } from '../generalFunctions';
 
 let randomNumber;
 let answer1;
@@ -35,11 +34,10 @@ function hideProgression(string) {
   return arr.join(' ');
 }
 
-export function brainProg() {
+export default function brainProg() {
   getRandomInt(1, 20);
   getRandomProgressNumber(1, 20);
   console.log(`Question:${hideProgression(getProgression())}`);
   answer1 = readlineSync.question('Your answer: ');
   chechAnswer(hideNumber, answer1);
 }
-

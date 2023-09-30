@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt, chechAnswer } from '../generalFunctions.js';
+import { getRandomInt, chechAnswer } from '../generalFunctions';
 
 let index;
 const operators = '+-*';
@@ -37,7 +37,7 @@ function calculation() {
   }
 }
 
-export function brainCalc() {
+export default function brainCalc() {
   console.log(`Question: ${randomCalc()}`);
   answer = readlineSync.question('Your answer: ');
   calculation(index);

@@ -1,15 +1,15 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt, chechAnswer } from '../generalFunctions.js';
+import { getRandomInt, chechAnswer } from '../generalFunctions';
 
 let answer;
 let rightAnswer;
 let currentNumber;
 
-function chechA () {
+function chechA() {
   rightAnswer = currentNumber % 2 === 0 ? 'yes' : 'no';
 }
 
-export function getEven() {
+export default function getEven() {
   currentNumber = getRandomInt(1, 999);
   console.log(`Question: ${currentNumber}`);
   chechA();

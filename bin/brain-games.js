@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { greeting } from '../src/generalFunctions.js';
+import { greeting } from '../src/generalFunctions';
 
 greeting();
