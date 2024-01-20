@@ -1,4 +1,4 @@
-import readlineSync, { question } from 'readline-sync';
+import readlineSync, { question } from "readline-sync";
 
 let userName;
 let rightAnswer = true;
@@ -9,7 +9,7 @@ let counterRightAnswerCalc = 0;
 export function greeting() {
   console.log(`Welcome to the Brain Games!
 May I have your name?`);
-  userName = readlineSync.question('Your answer: ');
+  userName = readlineSync.question("Your answer: ");
   console.log(`Hello, ${userName}`);
 }
 
@@ -18,10 +18,10 @@ export function getRandomInt(min, max) {
 }
 
 export function chechAnswer(foundedValue, userAnswer) {
-  if (foundedValue === userAnswer) {
+  if (foundedValue == userAnswer) {
     rightAnswer = true;
     counterRightAnswerCalc += 1;
-    console.log('Correct!');
+    console.log("Correct!");
   } else {
     rightAnswer = false;
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${foundedValue}'.

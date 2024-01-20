@@ -1,5 +1,5 @@
-import readlineSync from 'readline-sync';
-import { chechAnswer } from '../generalFunctions';
+import readlineSync from "readline-sync";
+import { chechAnswer } from "../generalFunctions.js";
 
 let randomNumber;
 let answer1;
@@ -17,7 +17,7 @@ function getRandomProgressNumber(min, max) {
 }
 
 function getProgression() {
-  let result = '';
+  let result = "";
   for (let i = 0; i < 10; i += 1) {
     result = `${result} ${randomNumber + i * randomProgressNumber}`;
   }
@@ -25,19 +25,19 @@ function getProgression() {
 }
 
 function hideProgression(string) {
-  const numbers = string.split(' ');
+  const numbers = string.split(" ");
   const arr = [];
   const i = getRandomInt(1, 10);
   numbers.forEach((element) => arr.push(element));
   hideNumber = arr[i];
-  arr[i] = '..';
-  return arr.join(' ');
+  arr[i] = "..";
+  return arr.join(" ");
 }
 
 export default function brainProg() {
   getRandomInt(1, 20);
   getRandomProgressNumber(1, 20);
   console.log(`Question:${hideProgression(getProgression())}`);
-  answer1 = readlineSync.question('Your answer: ');
+  answer1 = readlineSync.question("Your answer: ");
   chechAnswer(hideNumber, answer1);
 }

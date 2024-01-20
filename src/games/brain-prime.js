@@ -1,27 +1,27 @@
-import readlineSync from 'readline-sync';
-import { getRandomInt, chechAnswer } from '../generalFunctions';
+import readlineSync from "readline-sync";
+import { getRandomInt, chechAnswer } from "../generalFunctions.js";
 
 let answer;
 let currentNumber;
 
 function checkA() {
   if (currentNumber === 1) {
-    return 'no';
+    return "no";
   }
   if (currentNumber === 2) {
-    return 'yes';
+    return "yes";
   }
   for (let i = 2; i < currentNumber; i += 1) {
     if (currentNumber % i === 0) {
-      return 'no';
+      return "no";
     }
   }
-  return 'yes';
+  return "yes";
 }
 
 export default function brainPrime() {
   currentNumber = getRandomInt(1, 999);
   console.log(`Question: ${currentNumber}`);
-  answer = readlineSync.question('Your answer: ');
+  answer = readlineSync.question("Your answer: ");
   chechAnswer(checkA(), answer);
 }

@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "<a href=\"https://codeclimate.com/github/user-die/brain-games/maintainability\"><img src=\"https://api.codeclimate.com/v1/badges/312fbcd4291718adfab8/maintainability\" /></a>",
   "main": "index.js",
+  "type": "module",
   "bin": {
     "userdie-brain-games": "bin/brain-calc.js"
   },

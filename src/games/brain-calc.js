@@ -1,8 +1,8 @@
-import readlineSync from 'readline-sync';
-import { getRandomInt, chechAnswer } from '../generalFunctions';
+import readlineSync from "readline-sync";
+import { getRandomInt, chechAnswer } from "../generalFunctions.js";
 
 let index;
-const operators = '+-*';
+const operators = "+-*";
 let a;
 let b;
 let d;
@@ -21,7 +21,7 @@ function randomCalc() {
   return `${a} ${b} ${d}`;
 }
 
-function calculation() {
+function calculation(index) {
   switch (index) {
     case 0:
       resultCalc = a + d;
@@ -37,9 +37,9 @@ function calculation() {
   }
 }
 
-export default function brainCalc() {
+export function brainCalc() {
   console.log(`Question: ${randomCalc()}`);
-  answer = readlineSync.question('Your answer: ');
+  answer = readlineSync.question("Your answer: ");
   calculation(index);
   chechAnswer(resultCalc, answer);
 }

@@ -1,5 +1,5 @@
-import readlineSync from 'readline-sync';
-import { getRandomInt, chechAnswer } from '../generalFunctions';
+import readlineSync from "readline-sync";
+import { getRandomInt, chechAnswer } from "../generalFunctions.js";
 
 let answer;
 let e;
@@ -25,6 +25,6 @@ function getCommonDivider() {
 export default function brainGcd() {
   console.log(`Question: ${getTwoNumber()}`);
   getCommonDivider();
-  answer = readlineSync.question('Your answer: ');
+  answer = readlineSync.question("Your answer: ");
   chechAnswer(commonDivivder, answer);
 }
